@@ -8,9 +8,29 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
+<body class="flex items-center justify-center min-h-screen">
     <!-- Page 1 Login -->
+    <div id="passcode-screen" class="p-6 rounded-lg shadow-lg">
+        <h1 class="text-lg font-semibold text-gray-800 mb-4">Kapan Anak Cantik Ultah Ya???</h1>
+        <input id="passcode-input" type="password"
+            class="border border-gray-300 rounded-lg p-2 - w-full focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+            placeholder="Kapan Anak Imut Ultah Yaa???">
+        <button onclick="checkPasscode()"
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 w-full">Coba Yaa???</button>
+        <p id="error-messeage" class="text-red-500 text-sm mt-2 hidden">Hayooo Salahhh, Coba Lagi Ya???</p>
+    </div>
+
     <!-- Page 2 Count down -->
+    <div id="timer-screen" class="hidden bg-white p-6 rounded-lg shadow-lg text-center">
+        <h1 class="text-lg font-semibold text-gray-800 mb-4">Berapa lama yaa adek sudah lahir menghiasi dunia dengan
+            imut??? 🤔</h1>
+        <div class="text-4xl font-bold text-blue-600 mb-4">
+            <span id="tahun">0</span> tahun
+            <span id="bulan">00</span>:<span id="hari">00</span>:<span id="jam">00</span>:<span
+                id="menit">00</span>:<span id="detik">00</span>
+        </div>
+        <p class="text-sm text-gray-600">Wahhh adek sudah lama memberi keiimutan di dunia ini😉</p>
+    </div>
     <!-- Page 3 Album -->
     <!-- Page 4 Messeage -->
     <!-- Page 5 Candle Animation -->
