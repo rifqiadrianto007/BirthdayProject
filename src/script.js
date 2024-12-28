@@ -1,3 +1,4 @@
+// Time count
 function updateTime() {
     const startDate = new Date("2005-01-14T08:00:00");
     const now = new Date();
@@ -44,3 +45,6 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000);
+
+// Candle
+
