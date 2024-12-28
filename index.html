@@ -9,18 +9,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="/src/script.js" defer></script>
+    <style>
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(-250px);
+            }
+
+            50% {
+                transform: translateY(50px);
+            }
+        }
+
+        .animate-floating {
+            animation: floating 5s ease-in-out infinite;
+        }
+    </style>
 </head>
 
 <body class="bg-pink-100 font-sans">
 
-    <!-- Section 1: Passcode -->
-    <section class="bg-pink-300 text-white h-screen flex flex-col justify-center items-center">
-        <img src="./src/img/balloons (1).png" alt="balon 1" class="">
-        <img src="./src/img/balloons.png" alt="balon 2">
-        <h1 class="text-5xl font-bold mb-4">Hallo Adek cantikkk!!! 😊</h1>
-        <p class="text-xl">Sebelum melihat lebih dalam, yokk isi password dulu (huuu gaya ada password)</p>
-        <button class="mt-6 px-6 py-3 bg-white text-pink-500 font-semibold rounded">DI SINI NANTI JADI TEMPAT
-            PASSCODE</button>
+    <section class="bg-pink-300 text-white h-screen flex flex-col justify-center items-center relative overflow-hidden">
+        <!-- Balon Kiri -->
+        <img src="./src/img/balloons (1).png" alt="balon 1"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 w-120 animate-floating">
+
+        <img src="./src/img/balloons.png" alt="balon 2"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 w-120 animate-floating">
+
+        <!-- Konten Utama -->
+        <div class="text-center">
+            <h1 class="text-5xl font-bold mb-4">Hallo Adek cantikkk!!! 😊</h1>
+            <p class="text-xl">Sebelum melihat lebih dalam, yokk isi password dulu (huuu gaya ada password)</p>
+            <button
+                class="mt-6 px-6 py-3 bg-white text-pink-500 font-semibold rounded shadow-lg hover:bg-pink-500 hover:text-white transition duration-300">
+                DI SINI NANTI JADI TEMPAT PASSCODE
+            </button>
+        </div>
     </section>
 
     <!-- Section 2: Timer Count -->
