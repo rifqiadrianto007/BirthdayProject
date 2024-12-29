@@ -48,3 +48,26 @@ setInterval(updateTime, 1000);
 
 // Candle
 
+// Passcode
+const correctPasscode = "140105";
+
+function pressKey(key) {
+  const passcodeField = document.getElementById("passcode");
+  if (passcodeField.value.length < 6) {
+    passcodeField.value += key;
+  }
+}
+
+function clearPasscode() {
+  document.getElementById("passcode").value = "";
+}
+
+function submitPasscode() {
+  const passcodeField = document.getElementById("passcode");
+  if (passcodeField.value === correctPasscode) {
+    window.location.href = "page2.html"; // Ganti dengan URL halaman tujuan
+  } else {
+    alert("Incorrect Passcode. Try Again!");
+    clearPasscode();
+  }
+}
