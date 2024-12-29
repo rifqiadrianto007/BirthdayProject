@@ -67,7 +67,7 @@ function submitPasscode() {
   if (passcodeField.value === correctPasscode) {
     window.location.href = "page2.html"; // Ganti dengan URL halaman tujuan
   } else {
-    alert("Incorrect Passcode. Try Again!");
+    alert("Hayooo salah, coba lagi yuk!!!");
     clearPasscode();
   }
 }

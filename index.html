@@ -30,48 +30,6 @@
 
 <body class="bg-pink-100 font-sans">
 
-    <section class="flex items-center justify-center min-h-screen bg-gray-100">
-        <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center">
-            <!-- Image Section -->
-            <div class="mb-6">
-                <img src="/src/img/timecount.JPG" alt="Cute Cat" class="w-32 h-32 rounded-lg">
-            </div>
-            <!-- Passcode Section -->
-            <div class="w-full text-center">
-                <input type="password" id="passcode" placeholder="Enter passcode" readonly
-                    class="w-full p-3 text-center text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <!-- Keypad -->
-                <div class="grid grid-cols-3 gap-4 mt-6">
-                    <!-- Buttons -->
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(1)">1</button>
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(2)">2</button>
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(3)">3</button>
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(4)">4</button>
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(5)">5</button>
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(6)">6</button>
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(7)">7</button>
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(8)">8</button>
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(9)">9</button>
-                    <button class="bg-red-500 text-white p-4 rounded-lg hover:bg-red-600"
-                        onclick="clearPasscode()">C</button>
-                    <button class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600"
-                        onclick="pressKey(0)">0</button>
-                    <button class="bg-green-500 text-white p-4 rounded-lg hover:bg-green-600"
-                        onclick="submitPasscode()">OK</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="bg-pink-300 text-white h-screen flex flex-col justify-center items-center relative overflow-hidden">
         <!-- Balon Kiri -->
         <img src="./src/img/balloons (1).png" alt="balon 1"
@@ -148,13 +106,51 @@
     </section>
 
     <!-- Section 5: Wish Candle n Flower -->
-    <section class="flex items-center justify-center min-h-screen bg-pink-300 font-sans">
-        <h1 class="font-bold text-8xl">LILIN PINDAH KE PAGE LAIN</h1>
-        <button href="/page2.html" target="_blank">KLIK!!!</button>
+    <section class="flex items-center justify-center min-h-screen bg-pink-300">
+        <div
+            class="w-full bg-transparant backdrop-blur-lg p-20 rounded-2xl shadow-xl flex justify-start items-center space-x-4 max-w-2xl">
+            <!-- Image Section -->
+            <div class="flex-shrink-0">
+                <img src="/src/img/timecount.JPG" alt="Cute Cat"
+                    class="w-80 h-45 rounded-lg object-cover border-2 border-gray-300">
+            </div>
+            <!-- Passcode Section -->
+            <div class="w-full">
+                <input type="password" id="passcode" placeholder="Enter passcode" readonly
+                    class="w-full p-4 mb-4 text-center text-xl font-medium border border-gray-300 rounded-lg bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <!-- Keypad -->
+                <div class="grid grid-cols-3 gap-4">
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(1)">1</button>
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(2)">2</button>
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(3)">3</button>
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(4)">4</button>
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(5)">5</button>
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(6)">6</button>
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(7)">7</button>
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(8)">8</button>
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(9)">9</button>
+                    <button class="bg-red-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-red-600"
+                        onclick="clearPasscode()">C</button>
+                    <button class="bg-blue-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-blue-600"
+                        onclick="pressKey(0)">0</button>
+                    <button class="bg-green-500 text-white text-lg px-8 py-8 rounded-lg hover:bg-green-600"
+                        onclick="submitPasscode()">OK</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Section 6: Thanks n Contact -->
-    <section class="h-screen flex flex-col justify-center bg-gradient-to-b from-pink-300 via-white to-blue-200">
+    <!-- <section class="h-screen flex flex-col justify-center bg-gradient-to-b from-pink-300 via-white to-blue-200">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold text-pink-500 mb-6">Get in Touch</h2>
             <p class="text-lg text-gray-700 mb-8">Ready to plan your dream birthday party? Contact us today!</p>
@@ -165,7 +161,7 @@
                 <button class="px-6 py-3 bg-pink-500 text-white font-semibold rounded">Send Message</button>
             </form>
         </div>
-    </section>
+    </section> -->
 
 </body>
 
