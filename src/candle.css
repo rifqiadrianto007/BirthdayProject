@@ -234,3 +234,36 @@ body {
     top: 8.7em;
     opacity: 0.6;
   }
+
+  .hidden {
+    display: none;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+}
+
+#redirectButton {
+    background-color: #ff4b6f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#redirectButton:hover {
+    background-color: #e43a5e;
+}
