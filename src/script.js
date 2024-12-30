@@ -79,3 +79,23 @@ function scrollToSection(id) {
         section.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+// greating slideshow
+const images = [
+    "/src/img/BB.jpg",
+    "/src/img/CC.jpg",
+    "/src/img/DD.jpg",
+    "/src/img/EE.jpg"
+];
+let currentImageIndex = 0;
+    const slideshow = document.getElementById("slideshow");
+
+    function changeImage() {
+        slideshow.style.opacity = 0;
+        setTimeout(() => {
+            slideshow.src = images[currentImageIndex];
+            slideshow.style.opacity = 1;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }, 500);
+    }
+    setInterval(changeImage, 3000);
