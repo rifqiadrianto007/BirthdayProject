@@ -71,3 +71,11 @@ function submitPasscode() {
     clearPasscode();
   }
 }
+
+// button page1 -> timer
+function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}

@@ -30,27 +30,26 @@
 
 <body class="bg-pink-100 font-sans">
 
-    <section class="bg-pink-300 text-white h-screen flex flex-col justify-center items-center relative overflow-hidden">
-        <!-- Balon Kiri -->
+    <section
+        class="bg-pink-300 text-white min-h-screen flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8">
         <img src="./src/img/balloons (1).png" alt="balon 1"
-            class="absolute left-0 top-1/2 transform -translate-y-1/2 w-120 animate-floating">
-
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 w-32 sm:w-40 md:w-60 lg:w-80 animate-floating">
         <img src="./src/img/balloons.png" alt="balon 2"
-            class="absolute right-0 top-1/2 transform -translate-y-1/2 w-120 animate-floating">
-
-        <!-- Konten Utama -->
-        <div class="text-center">
-            <h1 class="text-5xl font-bold mb-4">Hallo Adek cantikkk!!! 😊</h1>
-            <p class="text-xl">Sebelum melihat lebih dalam, yokk isi password dulu (huuu gaya ada password)</p>
-            <button
-                class="mt-6 px-6 py-3 bg-white text-pink-500 font-semibold rounded shadow-lg hover:bg-pink-500 hover:text-white transition duration-300">
-                DI SINI NANTI JADI TEMPAT PASSCODE
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 w-32 sm:w-40 md:w-60 lg:w-80 animate-floating">
+        <div class="text-center max-w-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Hallo Adek cantikkk!!! 😊</h1>
+            <p class="text-base sm:text-lg md:text-xl">Di hari yang spesial ini, ada sesuatu yang mungkin bisa membuat
+                adek tersenyum kecil 😁</p>
+            <button onclick="scrollToSection('timer')"
+                class="mt-6 px-4 py-2 sm:px-6 sm:py-3 bg-white text-pink-500 font-semibold rounded shadow-lg hover:bg-pink-500 hover:text-white transition duration-300">
+                ADA APA SIHH MAS IKI???
             </button>
         </div>
     </section>
 
     <!-- Section 2: Timer Count -->
-    <section class="h-screen flex justify-center items-center bg-gradient-to-b from-pink-300 via-white to-blue-100">
+    <section id="timer"
+        class="h-screen flex justify-center items-center bg-gradient-to-b from-pink-300 via-white to-blue-100">
         <div
             class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12 p-6 lg:p-12 rounded-xl shadow-xl border-2 bg-white">
             <div class="w-full lg:w-1/2 flex justify-center items-center">
