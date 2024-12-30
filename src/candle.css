@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Sacramento");
 body {
-    background-color: #1e1934;
+    background-color: #f9a8d4;
   }
   
   h1 {
@@ -13,7 +12,6 @@ body {
     text-align: center;
     font-size: 2em;
     font-weight: 100;
-    font-family: "Sacramento";
     letter-spacing: 0.1em;
     color: white;
     text-shadow: 0 0 20px black;
