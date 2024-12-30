@@ -104,52 +104,56 @@
     </section>
 
     <!-- Section 4: Photo album -->
-    <section
-        class="h-screen flex flex-col justify-center items-center bg-gradient-to-t from-pink-300 via-white to-blue-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-pink-500 mb-8">Matutu's Life Story 🗺️</h2>
-            <img src="./src/img/1.png" alt="story1">
-            <img src="./src/img/2.png" alt="story2">
+    <section class="h-screen flex justify-center items-center bg-gradient-to-t from-pink-300 via-white to-blue-100">
+        <div class="max-w-3xl w-full flex flex-col items-center px-6 text-center space-y-8">
+            <h2 class="text-5xl font-bold text-pink-500">Matutu's Life Story 🗺️</h2>
+            <img src="./src/img/1.png" alt="story1" class="w-full max-w-md rounded-xl shadow-lg">
+            <img src="./src/img/2.png" alt="story2" class="w-full max-w-md rounded-xl shadow-lg">
         </div>
     </section>
 
-    <!-- Section 5: Wish Candle n Flower -->
-    <section class="flex items-center justify-center min-h-screen bg-pink-300">
+
+    <!-- Section 5: Passcode -> candle -->
+    <section class="h-screen flex items-center justify-center bg-gradient-to-b from-pink-300 via-white to-blue-100">
+        <h1 class="text-5xl md:text-6xl font-bold text-pink-600 mb-8 mt-12 text-center">
+            Menuju Kejutan Hangat 🔥
+        </h1>
         <div
-            class="bg-white/70 backdrop-blur-xl max-w-6xl mx-auto flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12 p-6 lg:p-12 rounded-xl shadow-xl border-2 bg-white">
+            class="bg-white/70 backdrop-blur-xl max-w-4xl w-full flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12 p-8 lg:p-12 rounded-xl shadow-2xl">
+            <!-- Foto Section -->
             <div class="w-full lg:w-1/2 flex justify-center items-center">
                 <img src="/src/img/timecount.JPG" alt="Foto Adek"
-                    class="rounded-xl shadow-lg max-w-sm md:max-w-md lg:max-w-lg border-4">
+                    class="rounded-xl shadow-lg w-full max-w-xs md:max-w-sm lg:max-w-md border-4 border-gray-200">
             </div>
             <!-- Passcode Section -->
-            <div class="w-full">
+            <div class="w-full lg:w-1/2">
                 <input type="password" id="passcode" placeholder="Enter passcode" readonly
-                    class="w-full p-4 mb-4 text-center text-xl font-medium border border-gray-300 rounded-lg bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    class="w-full p-4 mb-6 text-center text-xl font-medium border border-gray-300 rounded-lg bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-400">
                 <!-- Keypad -->
                 <div class="grid grid-cols-3 gap-4">
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(1)">1</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(2)">2</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(3)">3</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(4)">4</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(5)">5</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(6)">6</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(7)">7</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(8)">8</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(9)">9</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-red-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-red-300"
                         onclick="clearPasscode()">C</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-gray-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-gray-300"
                         onclick="pressKey(0)">0</button>
-                    <button class="text-black border-black text-2xl px-8 py-8 rounded-lg hover:bg-gray-600"
+                    <button class="bg-green-200 text-black text-2xl p-4 rounded-lg shadow hover:bg-green-300"
                         onclick="submitPasscode()">OK</button>
                 </div>
             </div>
