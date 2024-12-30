@@ -29,8 +29,8 @@
 </head>
 
 <body class="bg-pink-100 font-sans">
-
-    <section
+    <!-- Section 1 : Opening -->
+    <section id="opening"
         class="bg-pink-300 text-white min-h-screen flex flex-col justify-center items-center relative overflow-hidden px-4 md:px-8">
         <img src="./src/img/balloons (1).png" alt="balon 1"
             class="absolute left-0 top-1/2 transform -translate-y-1/2 w-32 sm:w-40 md:w-60 lg:w-80 animate-floating">
@@ -49,25 +49,29 @@
 
     <!-- Section 2: Timer Count -->
     <section id="timer"
-        class="h-screen flex justify-center items-center bg-gradient-to-b from-pink-300 via-white to-blue-100">
+        class="h-screen flex flex-col items-center bg-gradient-to-b from-pink-300 via-white to-blue-100">
+        <h1 class="text-5xl md:text-6xl font-bold text-pink-600 mb-8 mt-12 text-center">
+            Perjalanan Waktu Adek 💖
+        </h1>
         <div
-            class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 lg:space-x-12 p-6 lg:p-12 rounded-xl shadow-xl border-2 bg-white">
-            <div class="w-full lg:w-1/2 flex justify-center items-center">
+            class="w-full max-w-3xl mx-auto flex flex-col items-center space-y-6 p-6 rounded-xl shadow-xl border-2 bg-white">
+            <!-- Foto Adek -->
+            <div class="w-full flex justify-center">
                 <img src="/src/img/timecount.JPG" alt="Foto Adek"
-                    class="rounded-xl shadow-lg max-w-sm md:max-w-md lg:max-w-lg border-4">
+                    class="rounded-xl shadow-lg max-w-xs sm:max-w-sm md:max-w-md border-4">
             </div>
 
             <!-- Time Count -->
-            <div class="w-full lg:w-1/2 text-center lg:text-left">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-pink-500 mb-6">
+            <div class="w-full text-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-pink-500 mb-4">
                     Hemm... 🤔 Usia adek hari ini berapa ya???
                 </h2>
-                <p class="text-xl md:text-2xl lg:text-3xl font-semibold leading-relaxed">
-                    <span id="years" class="text-pink-500">0</span> tahun,
-                    <span id="months" class="text-purple-500">0</span> bulan,
-                    <span id="days" class="text-red-500">0</span> hari,
-                    <span id="hours" class="text-blue-500">0</span> jam,
-                    <span id="minutes" class="text-green-500">0</span> menit,
+                <p class="text-lg sm:text-xl md:text-2xl font-semibold leading-relaxed">
+                    <span id="years" class="text-pink-500">19</span> tahun,
+                    <span id="months" class="text-purple-500">11</span> bulan,
+                    <span id="days" class="text-red-500">16</span> hari,
+                    <span id="hours" class="text-blue-500">5</span> jam,
+                    <span id="minutes" class="text-green-500">30</span> menit,
                     <span id="seconds" class="text-yellow-500">0</span> detik
                 </p>
             </div>

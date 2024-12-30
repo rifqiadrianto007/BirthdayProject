@@ -1,6 +1,6 @@
 // Time count
 function updateTime() {
-    const startDate = new Date("2005-01-14T08:00:00");
+    const startDate = new Date("2005-01-14T00:00:00");
     const now = new Date();
 
     let years = now.getFullYear() - startDate.getFullYear();
