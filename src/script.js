@@ -99,3 +99,26 @@ let currentImageIndex = 0;
         }, 500);
     }
     setInterval(changeImage, 3000);
+
+// Play Lagu
+document.getElementById("playButton").addEventListener("click", function () {
+    const audio = document.getElementById("birthdaySong");
+
+    // Mulai pemutaran dari detik tertentu (opsional)
+    const startTime = 0; // Mulai dari detik ke-10
+    const endTime = 96; // Berhenti pada detik ke-20
+
+    audio.currentTime = startTime;
+    audio.play();
+
+    // Hentikan audio saat mencapai waktu akhir
+    audio.addEventListener("timeupdate", function () {
+      if (audio.currentTime >= endTime) {
+        audio.pause();
+        audio.currentTime = startTime; // Kembali ke awal jika perlu
+      }
+    });
+
+    // Sembunyikan tombol setelah lagu dimulai
+    this.style.display = "none";
+  });
