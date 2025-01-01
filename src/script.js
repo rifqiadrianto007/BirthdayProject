@@ -80,14 +80,13 @@ function scrollToSection(id) {
     }
 }
 
-// greating slideshow
 const images = [
     "/src/img/BB.jpg",
     "/src/img/CC.jpg",
     "/src/img/DD.jpg",
     "/src/img/EE.jpg",
     "/src/img/FF.jpg",
-    "/src/img/GG.jpg",
+    "/src/img/GG.jpeg",
     "/src/img/HH.jpg",
     "/src/img/II.jpg",
     "/src/img/JJ.jpg",
@@ -96,6 +95,7 @@ const images = [
     "/src/img/MM.jpg",
     "/src/img/NN.jpg",
 ];
+
 let currentImageIndex = 0;
     const slideshow = document.getElementById("slideshow");
 
